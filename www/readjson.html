@@ -10,10 +10,10 @@
             console.log(result);
             $.each(result, function(i, field) {
                 var id = field.id;
-                var title = field.title;
-                var duration = field.duration;
-                var price = field.price;
-                $("#listview").append("<a class='item' href='form.html?id=" + id + "&title=" + title + "&duration=" + duration + "&price=" + price + "'><span class='item-note'>$" + price + "</span><h2>" + title + " </h2><p>" + duration + "</p></a>");
+                var jabatan_anggota = field.jabatan_anggota;
+                var nama_anggota = field.nama_anggota;
+                var nama_lk = field.nama_lk ;
+                $("#listview").append("<a class='item' href='form.html?id=" + id + "&jabatan_anggota=" +jabatan_anggota + "&nama_anggota=" + nama_anggota + "&nama_lk=" + nama_lk + "'><span class='item-note'>$" +nama_lk + "</span><h2>" +jabatan_anggota + " </h2><p>" + nama_anggota + "</p></a>");
             });
         });
     });
